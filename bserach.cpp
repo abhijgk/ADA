@@ -12,6 +12,7 @@ int main()
 	{
 		arr[i]=rand()%100;
 	}
+	sort(arr,arr+count);
 	cout<<"The array is: "<<endl;
 	for (i=0; i<count; i++)
 	{
