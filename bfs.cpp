@@ -70,18 +70,29 @@ void Graph::BFS(int s)
 int main() 
 { 
      
-    Graph g(4); 
+    Graph g(8); 
+    g.addEdge(0, 0); 
     g.addEdge(0, 1); 
     g.addEdge(0, 2); 
-    g.addEdge(1, 2); 
-    g.addEdge(2, 0); 
-    g.addEdge(2, 3); 
-    g.addEdge(3, 3); 
+    g.addEdge(2, 1); 
+    g.addEdge(2, 2); 
+    g.addEdge(3, 3);
+	
+    g.addEdge(4, 5); 
+    g.addEdge(4, 6); 
+    g.addEdge(5, 7); 
+    g.addEdge(7, 7); 
+    
   
     cout << "Following is Breadth First Traversal "
          << "(starting from vertex 0) \n"<<endl; 
     g.BFS(0); 
-  
+	cout << "Following is Breadth First Traversal "
+         << "(starting from vertex 3) \n"<<endl;
+	g.BFS(3);
+	cout << "Following is Breadth First Traversal "
+         << "(starting from vertex 4) \n"<<endl;
+	g.BFS(4);
     return 0; 
 } 
 
