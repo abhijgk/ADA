@@ -6,8 +6,8 @@ def flyodalg(arr,n):
 
     for i in range(0,n+1):
         for j in range(0,n+1):
-            print(arr[i][j])
-        print(end="")
+            print(" ",arr[i][j],end="")
+        print("")
 
 arr=[[0   ,2   ,9999,1   ,8   ],
      [6   ,0   ,3   ,2   ,9999],
@@ -22,3 +22,4 @@ def min(a,b):
         return a
     else:
         return b
+
